@@ -81,7 +81,7 @@ def is_valid_passport_strict(passport_dict):
 
 
 def main():
-    with open('input4.txt') as f:
+    with open('inputs/input4.txt') as f:
         passports = f.read().split('\n\n')
 
     valid_passport_count = 0

@@ -1,6 +1,3 @@
-import pandas as pd
-
-
 def move1(i, j):
     return i+1, j+3
 
@@ -22,10 +19,7 @@ def compute_tree_count_with_move(matrix, move_func):
     tree_count = 0
     while row_num < len(matrix) - 1:  # until we reach the bottom
         row_num, col_num = move_func(row_num, col_num)
-        try:
-            val = matrix[row_num][col_num]
-        except IndexError:
-            import pdb; pdb.set_trace()
+        val = matrix[row_num][col_num]
         if val == '#':
             tree_count += 1
         elif val == '.':
@@ -36,7 +30,7 @@ def compute_tree_count_with_move(matrix, move_func):
 
 
 def main():
-    with open('input3.txt') as f:
+    with open('inputs/input3.txt') as f:
         trees = f.read().split()
 
     list_of_lists = []

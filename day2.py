@@ -22,7 +22,7 @@ def is_valid_2(policy, password):
 
 
 def main():
-    with open('input2.txt') as f:
+    with open('inputs/input2.txt') as f:
         password_lines = f.read().split('\n')
     print(len(password_lines))
 
