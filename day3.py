@@ -1,3 +1,5 @@
+# this is bad code do not read this code so bad
+
 def move1(i, j):
     return i+1, j+3
 
