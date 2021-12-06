@@ -1,2 +1,2 @@
 # advent-of-code-2020
-Horrible terrible code for Advent of Code 2020 problems
+Real messy code for AoC 2020/2021/bits of 2019
